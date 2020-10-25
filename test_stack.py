@@ -24,19 +24,19 @@ class TestStack(unittest.TestCase):
         s = Stack()
         self.assertTrue(s.is_empty())
 
-    # def test_initial_pop(self):
-    #     """
-    #     Popping from an empty stack raises IndexError.
-    #     """
-    #     s = Stack()
-    #     self.assertRaises(IndexError, s.pop)
+    def test_initial_pop(self):
+        """
+        Popping from an empty stack raises IndexError.
+        """
+        s = Stack()
+        self.assertRaises(IndexError, s.pop)
 
-    # def test_initial_peek(self):
-    #     """
-    #     Peeking at an empty stack raises IndexError.
-    #     """
-    #     s = Stack()
-    #     self.assertRaises(IndexError, s.peek)
+    def test_initial_peek(self):
+        """
+        Peeking at an empty stack raises IndexError.
+        """
+        s = Stack()
+        self.assertRaises(IndexError, s.peek)
 
     # def test_initial_push(self):
     #     """

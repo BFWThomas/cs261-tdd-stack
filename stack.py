@@ -12,3 +12,17 @@ class Stack:
         Returns whether or not the stack is empty
         """
         return len(self.values) == 0
+
+    def pop(self):
+        """
+        Removes the last item on the stack
+        """
+        if self.is_empty:
+            raise IndexError
+
+    def peek(self):
+        """
+        Looks at the last item of the stack
+        """
+        if self.is_empty:
+            raise IndexError
