@@ -20,6 +20,8 @@ class Stack:
         """
         if self.is_empty():
             raise IndexError
+        self.length -= 1
+        return self.values[self.length+1]
 
     def peek(self):
         """
