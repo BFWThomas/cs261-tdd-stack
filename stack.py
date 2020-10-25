@@ -26,3 +26,9 @@ class Stack:
         """
         if self.is_empty:
             raise IndexError
+
+    def push(self, val):
+        """
+        Appends a new node to stack with input value
+        """
+        self.values += [val]
