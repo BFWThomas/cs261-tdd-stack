@@ -46,13 +46,13 @@ class TestStack(unittest.TestCase):
         s.push('fee')
         self.assertFalse(s.is_empty())
 
-    # def test_peek_one(self):
-    #     """
-    #     A value pushed onto the stack can be peeked at.
-    #     """
-    #     s = Stack()
-    #     s.push('fee')
-    #     self.assertEqual('fee', s.peek())
+    def test_peek_one(self):
+        """
+        A value pushed onto the stack can be peeked at.
+        """
+        s = Stack()
+        s.push('fee')
+        self.assertEqual('fee', s.peek())
 
     # def test_pop_one(self):
     #     """
